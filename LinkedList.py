@@ -39,9 +39,13 @@ class LinkedList(object):
         current.next = new_node
     
     def remove(self,idx):
+        # 제거하려는 인덱스의 앞 노드로 이동
+        # next를 제거 인덱스의 next로 변경
+
         current = self.head
         for _ in range(idx-1):
           current = current.next
+
         current.next = current.next.next
 
     def print(self, idx = 0):
