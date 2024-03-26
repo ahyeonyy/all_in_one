@@ -5,5 +5,5 @@ for _ in range(m):
     k = n_list[j-1]
     n_list[j-1] = n_list[i-1]
     n_list[i-1] = k
-for e in n_list:
-    print(e, end= " ")
+for ele in n_list: 
+    print(ele, end= " ")
